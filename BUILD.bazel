@@ -86,3 +86,10 @@ go_library(
     embed = [":_validators_golang"],
     visibility = ["//visibility:public"],
 )
+
+go_library(
+    name = "go_default_library",
+    embed = [":validators_golang"],
+    importpath = "github.com/mwitkow/go-proto-validators",
+    visibility = ["//visibility:public"],
+)
